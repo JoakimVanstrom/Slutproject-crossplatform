@@ -2,9 +2,7 @@ import './App.css';
 import Header from "./components/header/Header";
 import WeatherApp from './components/weather/WeatherApp';
 import CalendarComp from './components/calendar/CalendarComp';
-import AnalClock from './components/clock/LiveClock';
-
-
+import LiveClock from './components/clock/LiveClock';
 
 function App() {
   return (
@@ -12,7 +10,7 @@ function App() {
       <Header />
       <WeatherApp />
       <CalendarComp />
-      <AnalClock />
+      <LiveClock />
     </div>
   );
 }

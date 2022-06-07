@@ -1,4 +1,3 @@
-import React, { Component } from "react";
 import AnalogClock from "ras-react-component";
 
 const style = {

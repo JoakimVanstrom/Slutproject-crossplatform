@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 const WeatherApp = () =>  {
     const [data, setData] = useState({});
     const APIkey = '895284fb2d2c50a520ea537456963d9c'
-    const URL = `http://api.openweathermap.org/data/2.5/weather?q=stockholm&units=metric&appid=${APIkey}`
+    const URL = `https://api.openweathermap.org/data/2.5/weather?q=stockholm&units=metric&appid=${APIkey}`
 
     useEffect(() => {
         fetch(URL)

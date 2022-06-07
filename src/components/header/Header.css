@@ -13,12 +13,11 @@
   font-size: 30px;
   margin-left: 50px;
   margin-top: 20px;
- 
 }
 
 .search-btn {
 position: absolute;
-right: 2vh;
+right: 4vh;
 top: 4vh;
 cursor: pointer;
 }

@@ -1,11 +1,12 @@
 import './App.css';
+import WeatherApp from './components/WeatherApp';
 import LiveClock from './components/clock/LiveClock';
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-      </header>
+      <WeatherApp />
       <LiveClock />
     </div>
   );

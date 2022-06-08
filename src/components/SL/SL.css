@@ -1,0 +1,15 @@
+.header {
+  background-color: rgb(31, 143, 207);
+}
+
+.output {
+  background-color: rgba(78, 152, 192, 0.194);
+  width: 356px;
+  height: 350px;
+}
+
+@media only screen and (min-width: 600px) {
+  .main {
+    width: 35%;
+  }
+}

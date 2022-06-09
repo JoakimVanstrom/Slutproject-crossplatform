@@ -1,11 +1,29 @@
 .reseplaneraren {
-  background-color: whitesmoke;
-  width: 350px;
-  height: 400px;
+  max-width: 350px;
+  max-height: 400px;
   border-radius: 5px;
   margin: 0px 0 0 3rem;
 }
 
+.header{
+  background-color: #009FE3;
+  border-radius: 5px 5px 0 0;
+  padding: 0.5rem;
+  margin: 0;
+  text-align: center;
+  color: white;
+}
+
+li {
+  list-style-type: none;
+}
+
+.traffic-box{
+ margin: 20px;
+ padding: 2rem;
+ background-color: #f6f6f6b8;
+ box-shadow: #575a5c80 0px 0px 5px;
+}
 
 @media only screen and (min-width: 600px) {
   .main {

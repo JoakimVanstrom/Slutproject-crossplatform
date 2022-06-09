@@ -14,8 +14,10 @@ const SL = () => {
   }, []);
 
   return (
-    <div className="container">
-      <h1 className="header">Reseplaneraren</h1>
+    <div className="App">
+      <div className="reseplaneraren">
+        <h2 className="header">Avgångar</h2>
+      </div>
     </div>
   );
 };

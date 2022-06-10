@@ -6,14 +6,11 @@ import Logo from "../../assets/images/logo.png";
 const SL = () => {
   const [data, setData] = useState([]);
 
-
-
   useEffect(() => {
     async function fetchData() {
       const res = await API.getData();
-    
       setData(res.data.Departure)
-      console.log(res.data.Departure);
+      /* console.log(res.data.Departure); */
     }
     fetchData();
   }, []);

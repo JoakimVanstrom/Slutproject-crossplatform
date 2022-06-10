@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from 'react';
+import './Weather.css';
+
 
 const WeatherApp = () =>  {
     const [data, setData] = useState({});
@@ -14,6 +16,7 @@ const WeatherApp = () =>  {
 
     return (
         <div className="weatherApp">
+         
               <div className="top">
           <div className="location">
             <p>{data.name}</p>
@@ -25,6 +28,7 @@ const WeatherApp = () =>  {
             {data.weather ? <p>{data.weather[0].main}</p> : null}
           </div>
         </div>
+    
 
         {data.name !== undefined &&
           <div className="bottom">

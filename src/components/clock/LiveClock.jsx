@@ -1,7 +1,6 @@
 import AnalogClock from "ras-react-component";
 
 const LiveClock = () => {
-
   const style = {
     numerals: "western_arabic",
     showMinuteScale: true,
@@ -17,15 +16,15 @@ const LiveClock = () => {
     thirdCircleColor: `white`,
     fourthCircleColor: `black`,
     centerDotColor: `black`,
-    width: 350,
-    numberSize: 120,
+    width: 300,
+    numberSize: 80,
     iana: `Europe/Stockholm`,
   };
 
   return (
-    <div>
+    <>
       <AnalogClock characteristics={style} />
-    </div>
+    </>
   );
 };
 

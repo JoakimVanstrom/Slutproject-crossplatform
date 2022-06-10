@@ -6,25 +6,30 @@ import Logo from "../../assets/images/logo.png";
 const SL = () => {
   const [data, setData] = useState([]);
 
-  
+
+
   useEffect(() => {
     async function fetchData() {
       const res = await API.getData();
-      setData(res.data.Departure);
+    
+      setData(res.data.Departure)
       console.log(res.data.Departure);
     }
     fetchData();
   }, []);
 
+
+  if (data.length > 10) {
+    setData(data.slice(0, 10));
+  } 
+
   return (
     <div className="App">
       <div className="reseplaneraren">
-
         <div className="header">
         <img src={Logo} alt="sl-logo" width={80} />
         <h2>Avgångar</h2>
         </div>
-        
 
         <div className="traffic">
           {data.map((item) => (
@@ -35,6 +40,7 @@ const SL = () => {
             </ul>
           ))}
         </div>
+        
       </div>
     </div>
   );

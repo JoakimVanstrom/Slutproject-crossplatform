@@ -4,7 +4,7 @@ import WeatherApp from "./components/weather/WeatherApp";
 import CalendarComp from "./components/calendar/CalendarComp";
 import LiveClock from "./components/clock/LiveClock";
 import SL from "./components/SL/SL"
-/* import IG from './components/IG/IG'; */
+import IG from './components/IG/IG';
 
 function App() {
   return (
@@ -18,7 +18,7 @@ function App() {
         </div>
       </div>
       <SL />
-    {/*   <IG /> */}
+      <IG />
     </div>
   );
 }

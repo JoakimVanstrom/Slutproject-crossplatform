@@ -25,21 +25,20 @@ const URL = "https://graph.facebook.com/v14.0/me?fields=id%2Cname"; */
 }; */
 const URL = "https://swapi.dev/api/people/1";
 
-const handler = async (event) => {
+exports.handler = async (event, context) => {
   try {
-    const response = await fetch(URL, {headers:{
-      "Access-Control-Allow-Origin": "*",
-    }});
+    const response = await fetch(URL, {
+      headers: {
+        "Access-Control-Allow-Origin": "*",
+      },
+    });
     const data = await response.json();
-    console.log(data)
+    console.log(data);
     return {
       statusCode: 200,
       body: JSON.stringify(data),
     };
-  }
-  catch (err) {
+  } catch (err) {
     return { error: err.message };
   }
-}
-
-module.exports = { handler };
+};

@@ -9,16 +9,20 @@ import TwitterFeed from "./components/twitter/TwitterFeed";
 function App() {
   return (
     <div className="App">
+      <div className="AppHeader">
       <Header />
+      </div>
       <div className="right-side-container">
         <div className="right-side-content">
-          <WeatherApp />
           <CalendarComp />
+          <WeatherApp />
           <LiveClock />
         </div>
       </div>
+      <div className="SL">
       <SL />
-      <div>
+      </div>
+      <div className="TF">
       <TwitterFeed />
       </div>
     </div>

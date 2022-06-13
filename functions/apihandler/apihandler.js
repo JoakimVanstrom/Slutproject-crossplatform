@@ -29,16 +29,18 @@ exports.handler = async (event, context) => {
   try {
     const response = await fetch(URL, {
       headers: {
-        "Access-Control-Allow-Origin": "*",
-      },
+        "Access-Control-Allow-Origin": "*"
+      }
     });
     const data = await response.json();
     console.log(data);
+
     return {
       statusCode: 200,
-      body: JSON.stringify(data),
+      body: JSON.stringify(data)
     };
-  } catch (err) {
+  }
+  catch (err) {
     return { error: err.message };
   }
-};
+}

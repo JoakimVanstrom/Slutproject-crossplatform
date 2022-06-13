@@ -1,42 +1,42 @@
 import { useState, useEffect } from "react";
 
 const IG = () => {
-  const [Posts, setPosts] = useState([
-    { name: "Loading...", username: "Loading...", text: "Loading..." },
-  ]);
+  const [Tweets, setTweets] = useState([{name: "Loading...", username: "Loading...", text: "Loading..."}]);
 
   async function fetchNetlify() {
-    fetch("https://roaring-cactus-4a1a3c.netlify.app/.netlify/functions/apihandler")
-      .then((response) => response.json())
-      .then((data) => {
-        setPosts(data);
-        console.log(data);
-      })
-      .catch((error) => console.log(error));
+      fetch('https://roaring-cactus-4a1a3c.netlify.app/.netlify/functions/apihandler')
+          .then(response => response.json())
+          .then(data => {
+              setTweets(data);
+              console.log(data)
+          })
+          .catch(error => console.log(error));
   }
 
+  //useEffect setInterval
   useEffect(() => {
-    setInterval(() => {
-      fetchNetlify();
-    }, 10000);
+      setInterval(() => {
+          fetchNetlify();
+      }, 10000);
   }, []);
 
   return (
-    <div className="Widget News">
-              {Posts.map((post, index) => {
-                return (
-                    <div className="" key={index}>
-                        <div className="">
-                            <h3>{post.name}</h3>
-                        </div>
-                        <div className="">
-                            <p>{post.mass}</p>
-                        </div>
-                    </div>
-                );
-            })}
-    </div>
+      <div className="Widget News">
+          {Tweets.map((tweet, index) => {
+              return (
+                  <div className="Tweet" key={index}>
+                      <div className="TweetHandle">
+                          <h3>{tweet.name}</h3>
+                      </div>
+                      <div className="TweetContent">
+                          <p>{tweet.text}</p>
+                      </div>
+                  </div>
+              );
+          })}
+      </div>
   );
-};
+}
 
 export default IG;
+

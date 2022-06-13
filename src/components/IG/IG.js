@@ -23,7 +23,18 @@ const IG = () => {
 
   return (
     <div className="Widget News">
-      <p>{Posts}</p>
+              {Posts.map((post, index) => {
+                return (
+                    <div className="" key={index}>
+                        <div className="">
+                            <h3>{post.name}</h3>
+                        </div>
+                        <div className="">
+                            <p>{post.mass}</p>
+                        </div>
+                    </div>
+                );
+            })}
     </div>
   );
 };

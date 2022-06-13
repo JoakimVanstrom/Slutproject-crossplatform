@@ -23,12 +23,13 @@ const URL = "https://graph.facebook.com/v14.0/me?fields=id%2Cname"; */
     return { error: err.message };
   }
 }; */
+const URL = "https://swapi.dev/api/people/1";
 
 const handler = async (event) => {
   try {
-    const response = await fetch(
-      "https://swapi.dev/api/people/1"
-    );
+    const response = await fetch(URL, {headers:{
+      "Access-Control-Allow-Origin": "*",
+    }});
     const data = await response.json();
     console.log(data)
     return {

@@ -35,16 +35,10 @@ exports.handler = async (event, context) => {
     const data = await response.json();
     console.log(data);
 
-    const getData = data.map(item => {
-      const {name} = item.name;
-      const {height} = item.height;
-      const {mass} = item.mass;
-      return {
-        name, height, mass
-  }});
+ 
     return {
       statusCode: 200,
-      body: JSON.stringify(getData)
+      body: JSON.stringify(data)
     };
   }
   catch (err) {

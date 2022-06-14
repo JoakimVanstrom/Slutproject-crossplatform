@@ -11,7 +11,7 @@ const SL = () => {
     setData(res.data.Departure);
   }
 
-  useEffect(() => {
+ useEffect(() => {
     fetchSL();
     setInterval(() => {
       fetchSL();

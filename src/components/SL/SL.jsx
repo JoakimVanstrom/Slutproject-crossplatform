@@ -23,7 +23,7 @@ const SL = () => {
   }
 
   return (
-    <div className="App">
+    <div className="SlApp">
       <div className="reseplaneraren">
         <div className="header">
           <img src={Logo} alt="sl-logo" width={80} />

@@ -1,20 +1,17 @@
-footer{
- background-color: #676767;
- margin: 0 auto;
- font-size: medium;
- font-weight: bold;
- text-align: center;
-
- position: absolute;
- bottom: 0;
- width: 100%;
-  height: 60px;
+footer {
+  background-color: #676767;
+  font-size: medium;
+  font-weight: bold;
+  width: 100%;
+  height: 100%;
   color: white;
-  padding: 30px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+}
 
-  
+.footerInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
 }

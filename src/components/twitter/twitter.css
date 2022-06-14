@@ -1,7 +1,6 @@
 .TwitterWrapper {
   border: 5px solid #6a2449;
   border-radius: 5px;
-  margin-top: 2rem;
   max-height: 60vh;
   overflow: scroll;
 }

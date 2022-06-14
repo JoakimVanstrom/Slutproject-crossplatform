@@ -1,15 +1,10 @@
 .reseplaneraren {
-  max-width: 700px;
-  max-height: 400px;
   border-radius: 5px;
-  margin: -3rem 0 0 -5rem;
-  transform: scale(.6);
 }
 
 .header{
   background-color: #009FE3;
   border-radius: 5px 5px 0 0;
-  padding: 0.5rem;
   text-align: center;
   color: white;
 }
@@ -21,22 +16,15 @@ li {
 .traffic{
   display: flex;
   flex-wrap: wrap;
-  width: 700px;
   border: #009FE3 solid 1px;
-  
+  justify-content: center;
 }
 
 .traffic-box{
- margin: 1.2rem;
- padding: 1.5rem; 
- width: 300px;
- max-height: 400px;
+ margin: 0.5rem;
+ padding: 0.5rem;
+ width: 220px;
  background-color: #f6f6f6b8;
  box-shadow: #575a5c80 0px 0px 5px;
 }
 
-@media only screen and (min-width: 600px) {
-  .main {
-    width: 35%;
-  }
-}

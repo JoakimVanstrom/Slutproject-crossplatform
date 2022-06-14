@@ -10,6 +10,7 @@ import Footer from "./components/footer/Footer";
 function App() {
   return (
     <div className="App">
+
       <div className="AppHeader">
         <Header />
       </div>
@@ -28,7 +29,9 @@ function App() {
       <div className="TF">
         <TwitterFeed />
       </div>
+      <div className="FootWrapper">
         <Footer />
+      </div>
     </div>
   );
 }

@@ -1,5 +1,5 @@
 import "./Header.css";
-import logo from "../../assets/images/search.png";
+import Clock from "react-live-clock";
 
 const Header = () => {
   return (
@@ -7,8 +7,9 @@ const Header = () => {
       <div className="header-title">
         <h1>IT-HÖGSKOLAN</h1>
       </div>
-      <div className="search-btn">
-      <img src={logo} alt="search"/>
+
+      <div className="digital-clock">
+        <Clock format={"HH:mm:ss"} ticking={true} />
       </div>
     </div>
   );

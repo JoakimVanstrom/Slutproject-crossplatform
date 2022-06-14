@@ -16,9 +16,8 @@
   margin-top: 20px;
 }
 
-.search-btn {
-position: absolute;
-right: 4vh;
-top: 4vh;
-cursor: pointer;
+.digital-clock{
+  font-size: 30px;
+  margin-right: 50px;
+  margin-top: 20px;
 }

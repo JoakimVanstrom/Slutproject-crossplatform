@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import tweets from '../../assets/tweets.json';
+import './twitter.css'
 
 function TwitterFeed() {
 
@@ -23,7 +24,10 @@ function TwitterFeed() {
     // }, []);
 
     return (
-        <div className="Widget News">
+        <div className="TwitterWrapper">
+            <div className="TweetHeader">
+                <h1>Tweets</h1>
+            </div>
             {Tweets.map((tweet, index) => {
                 return (
                     <div className="Tweet" key={index}>

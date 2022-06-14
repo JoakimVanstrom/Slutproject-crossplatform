@@ -28,9 +28,6 @@ function TwitterFeed() {
 
     return (
         <div className="TwitterWrapper">
-            <div className="TweetHeader">
-                <h1>Tweets</h1>
-            </div>
 
             {Tweets.map((tweet, index) => {
                 return (

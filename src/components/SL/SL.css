@@ -1,3 +1,7 @@
+.SlApp {
+  width: 100%;
+}
+
 .reseplaneraren {
   border-radius: 5px;
 }
@@ -16,14 +20,14 @@ li {
 .traffic{
   display: flex;
   flex-wrap: wrap;
-  border: #009FE3 solid 1px;
+  border: #009FE3 solid 5px;
   justify-content: center;
 }
 
 .traffic-box{
  margin: 0.5rem;
  padding: 0.5rem;
- width: 220px;
+ width: 210px;
  background-color: #f6f6f6b8;
  box-shadow: #575a5c80 0px 0px 5px;
 }

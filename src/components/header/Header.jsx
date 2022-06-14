@@ -8,9 +8,10 @@ const Header = () => {
       <div className="header-logo">
         <img src={HeaderLogo} alt="" />
       </div>
-
+      <div><h1>ITHS Dashboard</h1></div>
       <div className="digital-clock">
-        <Clock format={"HH:mm:ss"} ticking={true} />
+        <h3>Local Time: </h3>
+        <Clock className="Clock" format={"HH:mm:ss"} ticking={true} />
       </div>
     </div>
   );

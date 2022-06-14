@@ -15,18 +15,17 @@ function App() {
         <Header />
       </div>
 
-      <div className="right-side-container">
-        <div className="right-side-content">
-        
+      <div className="CalenderApp">
           <CalendarComp />
-          <WeatherApp />
         </div>
+        <div className="WeatherApp">
+          <WeatherApp />
       </div>
       <div className="SL">
-    
         <SL />
       </div>
       <div className="TF">
+        <div className="TweetHeader"><h1>Tweets</h1></div>
         <TwitterFeed />
       </div>
       <div className="FootWrapper">

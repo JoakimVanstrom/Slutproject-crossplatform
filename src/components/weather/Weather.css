@@ -1,7 +1,6 @@
 .weatherApp {
-  width: 350px;
-  padding: 1.5rem;
+  padding: 1rem;
   flex-flow: column;
-  border: 2px solid #9C4F77;
+  border: 5px solid #693250;
   border-radius: 5px;
 }

@@ -7,6 +7,9 @@ function TwitterFeed() {
     const [Tweets, setTweets] = useState([{name: "Loading...", username: "Loading...", text: "Loading..."}]);
     // const [Tweets, setTweets] = useState(tweets);
 
+    // http://localhost:8888/.netlify/functions/apihandler
+    // https://roaring-cactus-4a1a3c.netlify.app/.netlify/functions/apihandler
+
     async function fetchNetlify() {
         fetch('https://roaring-cactus-4a1a3c.netlify.app/.netlify/functions/apihandler')
             .then(response => response.json())
@@ -28,6 +31,7 @@ function TwitterFeed() {
             <div className="TweetHeader">
                 <h1>Tweets</h1>
             </div>
+
             {Tweets.map((tweet, index) => {
                 return (
                     <div className="Tweet" key={index}>

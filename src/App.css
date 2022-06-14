@@ -3,6 +3,15 @@
   display: grid;
   grid-template-columns: repeat(12, 1fr);
 }
+::-webkit-scrollbar {
+  width: 5px;
+  background: none;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #6a2449;
+  border-radius: 0px;
+}
 
 * {
   font-family: 'Montserrat', sans-serif;

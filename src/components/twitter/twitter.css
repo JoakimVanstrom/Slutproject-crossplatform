@@ -1,13 +1,15 @@
 .TwitterWrapper {
-    border: 1px solid #9C4F77;
+    border: 5px solid #6a2449;
     border-radius: 5px;
     margin-top: 2rem;
+    overflow-y: scroll;
+    max-height: 60vh;
 }
 .TweetHeader {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #9C4F77;
+    background-color: #6a2449;
     margin: 0;
     padding: 0;
     height: 5rem;

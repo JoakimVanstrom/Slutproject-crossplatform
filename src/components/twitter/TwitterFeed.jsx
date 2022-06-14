@@ -1,27 +1,27 @@
 import { useState, useEffect } from "react";
-import tweets from '../../assets/tweets.json';
+// import tweets from '../../assets/tweets.json';
 import './twitter.css'
 
 function TwitterFeed() {
 
-    // const [Tweets, setTweets] = useState([{name: "Loading...", username: "Loading...", text: "Loading..."}]);
-    const [Tweets, setTweets] = useState(tweets);
+    const [Tweets, setTweets] = useState([{name: "Loading...", username: "Loading...", text: "Loading..."}]);
+    // const [Tweets, setTweets] = useState(tweets);
 
-    // async function fetchNetlify() {
-    //     fetch('https://roaring-cactus-4a1a3c.netlify.app/.netlify/functions/apihandler')
-    //         .then(response => response.json())
-    //         .then(data => {
-    //             setTweets(data);
-    //             console.log(data)
-    //         })
-    //         .catch(error => console.log(error));
-    // }
+    async function fetchNetlify() {
+        fetch('https://roaring-cactus-4a1a3c.netlify.app/.netlify/functions/apihandler')
+            .then(response => response.json())
+            .then(data => {
+                setTweets(data);
+                console.log(data)
+            })
+            .catch(error => console.log(error));
+    }
 
-    // useEffect(() => {
-    //     setInterval(() => {
-    //         fetchNetlify();
-    //     }, 10000);
-    // }, []);
+    useEffect(() => {
+        setInterval(() => {
+            fetchNetlify();
+        }, 10000);
+    }, []);
 
     return (
         <div className="TwitterWrapper">

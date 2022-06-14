@@ -16,7 +16,6 @@ const WeatherApp = () =>  {
 
     return (
         <div className="weatherApp">
-         
               <div className="top">
           <div className="location">
             <p>{data.name}</p>

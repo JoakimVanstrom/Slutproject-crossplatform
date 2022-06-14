@@ -12,9 +12,10 @@ async function fetchSL() {
 }
 
   useEffect(() => {
+    fetchSL();
     setInterval(() => {
               fetchSL();
-          }, 600000);
+          }, 60000);
   }, []);
 
 

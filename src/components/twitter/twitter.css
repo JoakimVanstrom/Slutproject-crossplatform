@@ -1,0 +1,24 @@
+.TwitterWrapper {
+    border: 1px solid #9C4F77;
+    border-radius: 5px;
+    margin-top: 2rem;
+}
+.TweetHeader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #9C4F77;
+    margin: 0;
+    padding: 0;
+    height: 5rem;
+    color: white;
+}
+
+.Tweet {
+    margin: 1.2rem;
+    padding: 1.5rem; 
+    width: 90%;
+    height: 100%;
+    background-color: #f6f6f6b8;
+    box-shadow: #575a5c80 0px 0px 5px;
+}

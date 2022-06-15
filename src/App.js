@@ -11,26 +11,27 @@ import Piravid from "./assets/images/Piravid.png";
 function App() {
   return (
     <div className="App">
-
       <div className="AppHeader">
         <Header />
       </div>
 
       <div className="CalenderApp">
-          <CalendarComp />
-        </div>
-        <div className="WeatherApp">
-          <WeatherApp />
+        <CalendarComp />
+      </div>
+      <div className="WeatherApp">
+        <WeatherApp />
       </div>
       <div className="SL">
         <header className="SlHeader">
-        <img src={Logo} alt="sl-logo" />
+          <img src={Logo} alt="sl-logo" />
           <h2>Avgångar från skolan</h2>
         </header>
         <SL />
       </div>
       <div className="TF">
-        <header className="TweetHeader"><h1>Tweets</h1></header>
+        <header className="TweetHeader">
+          <h1>Tweets</h1>
+        </header>
         <TwitterFeed />
       </div>
       <div className="piravid">

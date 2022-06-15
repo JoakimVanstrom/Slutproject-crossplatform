@@ -1,3 +1,4 @@
+//////////////////////////////////////////////////////////////////////// 2560 ////////////////////////////////////////////////////////////////////////
 .SlApp {
   width: 100%;
   li {
@@ -10,7 +11,7 @@
   flex-wrap: wrap;
   justify-content: center;
   padding-top: 1rem;
-  height: 60rem;
+  height: 50rem;
   font-size: 1.4rem;
   .traffic-name {
     font-size: 1.7rem;
@@ -30,4 +31,24 @@
     width: 20rem;
     margin: 0 0 1rem 1rem;
   }
+}
+
+//////////////////////////////////////////////////////////////////////// 1980 ////////////////////////////////////////////////////////////////////////
+
+@media screen and (max-width: 1980px) {
+.traffic {
+  padding: 0rem;
+  height: 40rem;
+  .traffic-name{
+    font-size: 1.2rem;
+  }
+}
+
+.traffic-box{
+  margin: 0.5rem;
+  font-size: 1rem;
+  width: 18rem;
+}
+
+
 }

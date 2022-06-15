@@ -18,8 +18,8 @@ const SL = () => {
     }, 60000);
   }, []);
 
-  if (data.length > 12) {
-    setData(data.slice(0, 12));
+  if (data.length > 10) {
+    setData(data.slice(0, 10));
   }
 
   return (

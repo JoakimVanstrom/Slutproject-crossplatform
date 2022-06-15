@@ -24,7 +24,7 @@ function App() {
       </div>
       <div className="SL">
         <header className="SlHeader">
-        <img src={Logo} alt="sl-logo" width={80} />
+        <img src={Logo} alt="sl-logo" />
           <h2>Avgångar från skolan</h2>
         </header>
         <SL />
@@ -34,6 +34,7 @@ function App() {
         <TwitterFeed />
       </div>
       <div className="piravid">
+        <h1>Årets lärare 2021</h1>
         <img src={Piravid} alt="" />
       </div>
       <div className="FootWrapper">

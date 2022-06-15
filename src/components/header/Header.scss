@@ -24,3 +24,21 @@
 .Clock {
   padding: 0.3rem 0 0 1rem;
 }
+
+@media screen and (max-width: 768px) {
+  .header-container {
+    width: 25.8rem;
+  }
+  .header-logo{
+    img{
+      width: 20rem;
+    }
+  }
+  .digital-clock {
+    display: none;
+  }
+  .HeaderTitle{
+    display: none;
+  }
+
+}

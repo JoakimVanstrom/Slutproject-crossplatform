@@ -21,16 +21,7 @@
   background: #693250;
   border-radius: 0px;
 }
-.TweetHeader {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #693250;
-  margin: 0;
-  padding: 0;
-  height: 5rem;
-  color: white;
-}
+
 
 
 .AppHeader {
@@ -38,20 +29,57 @@
 }
 
 .CalenderApp {
-  grid-area: 2 / 10 / 4 / 12;
+  grid-area: 2 / 9 / 3 / 12;
+  border: 5px solid #693250;
+  margin-left: 1rem;
+  height: 18rem;
 }
 
 .WeatherApp {
-  grid-area: 4 / 10 / 6 / 12;
+  margin-top: 1rem;
+  grid-area: 3 / 9 / 4 / 12; 
+  margin-left: 1rem;
+  border: 5px solid #693250;
+  height: 18rem;
 }
 
 .SL {
-  grid-area: 2 / 2 / 6 / 5;
+  grid-area: 2 / 1 / 6 / 5;
+  border: #009FE3 solid 5px;
+  border-radius: 5px;
+  margin-left: 1rem;
+  header {
+    background-color: #009FE3;
+    text-align: center;
+    color: white;
+    height: 10rem;
+    img {
+      margin-top: 1rem;
+    }
+  }
 }
 
 .TF {
-  grid-area: 2 / 6 / 6 / 9;
+  grid-area: 2 / 5 / 6 / 9;
+  margin-left: 1rem;
+  border: 5px solid #693250;
+  border-radius: 5px;
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #693250;
+    margin: 0;
+    padding: 0;
+    height: 10rem;
+    color: white;
+  }
 }
+
+.piravid {
+  grid-area: 4 / 9 / 6 / 12;
+}
+
 
 .FootWrapper {
   width: 100%;

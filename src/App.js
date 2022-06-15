@@ -1,11 +1,12 @@
-import "./App.css";
+import "./App.scss";
 import Header from "./components/header/Header";
 import WeatherApp from "./components/weather/WeatherApp";
 import CalendarComp from "./components/calendar/CalendarComp";
-
+import Logo from "./assets/images/logo.png";
 import SL from "./components/SL/SL";
 import TwitterFeed from "./components/twitter/TwitterFeed";
 import Footer from "./components/footer/Footer";
+import Piravid from "./assets/images/Piravid.png";
 
 function App() {
   return (
@@ -22,11 +23,18 @@ function App() {
           <WeatherApp />
       </div>
       <div className="SL">
+        <header className="SlHeader">
+        <img src={Logo} alt="sl-logo" width={80} />
+          <h2>Avgångar från skolan</h2>
+        </header>
         <SL />
       </div>
       <div className="TF">
-        <div className="TweetHeader"><h1>Tweets</h1></div>
+        <header className="TweetHeader"><h1>Tweets</h1></header>
         <TwitterFeed />
+      </div>
+      <div className="piravid">
+        <img src={Piravid} alt="" />
       </div>
       <div className="FootWrapper">
         <Footer />

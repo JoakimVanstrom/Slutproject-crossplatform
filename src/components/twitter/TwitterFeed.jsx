@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 // import tweets from '../../assets/tweets.json';
-import './twitter.css'
+import './twitter.scss'
 
 function TwitterFeed() {
 
@@ -11,7 +11,7 @@ function TwitterFeed() {
     // https://roaring-cactus-4a1a3c.netlify.app/.netlify/functions/apihandler
 
     async function fetchNetlify() {
-        fetch('https://roaring-cactus-4a1a3c.netlify.app/.netlify/functions/apihandler')
+        fetch('/.netlify/functions/apihandler')
             .then(response => response.json())
             .then(data => {
                 setTweets(data);

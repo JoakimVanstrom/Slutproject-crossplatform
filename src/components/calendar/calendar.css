@@ -6,3 +6,11 @@
   border: 3px solid #693250;
   border-radius: 5px;
 }
+
+
+
+@media screen and (max-width: 768px) {
+  .react-calendar{
+    width: 20rem;
+  }
+}

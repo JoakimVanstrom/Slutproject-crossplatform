@@ -8,10 +8,10 @@
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 480px) {
   .weatherApp {
-    width: 20rem;
-    margin: 0 0 1rem 1rem;
+   width: auto;
+   transform: translateY(-1rem);
   }
 }
 

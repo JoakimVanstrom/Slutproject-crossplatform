@@ -5,11 +5,13 @@
   border-radius: 5px;
 }
 
-
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 480px) {
 .weatherApp {
   width: 22rem;
+  height: 17rem;
   margin: 0 0 1rem 1rem;
+  font-size: large;
 }
+
 
 }

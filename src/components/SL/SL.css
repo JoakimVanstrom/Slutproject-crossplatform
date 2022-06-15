@@ -39,4 +39,10 @@ li {
   margin: 0 0 1rem 1rem;
 }
 
+.traffic-box{
+  width: 100%;
+  font-size: small;
+  line-height: 1.5;
+}
+
 }

@@ -1,7 +1,11 @@
+//////////////////////////////////////////////////////////////////////// 2560 ////////////////////////////////////////////////////////////////////////
 .weatherApp {
   padding: 1rem;
   border-radius: 5px;
-  font-size: 3rem;
+  font-size: 2rem;
+  img{
+    width: 80px;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -10,3 +14,18 @@
     margin: 0 0 1rem 1rem;
   }
 }
+
+
+//////////////////////////////////////////////////////////////////////// 1980 ////////////////////////////////////////////////////////////////////////
+@media screen and (max-width: 1980px) {
+  .weatherApp {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+  }
+
+}
+

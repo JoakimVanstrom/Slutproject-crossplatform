@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./Weather.scss";
+import Sun from "../../assets/images/sun.png";
 
 const WeatherApp = () => {
   const [data, setData] = useState({});
@@ -16,6 +17,7 @@ const WeatherApp = () => {
     <div className="weatherApp">
       <div className="top">
         <div className="location">
+          <img src={Sun} alt="" />
           <h1>{data.name}</h1>
           <div className="temp">
             {data.main ? <h1>{data.main.temp.toFixed()}°C</h1> : null}

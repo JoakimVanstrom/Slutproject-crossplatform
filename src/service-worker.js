@@ -7,6 +7,7 @@ self.addEventListener("install", (event) => {
   event.waitUntil(
     caches.open("grillkorv").then((cache) => {
       console.log(statics);
+      cache.add("/");
       return cache.addAll(statics.map((url) => url.url));
     })
   );
@@ -15,6 +16,10 @@ self.addEventListener("install", (event) => {
 
 self.addEventListener("fetch", (event) => {
   if (!(event.request.url.indexOf('http') === 0)) return;
+
+  if (event.request.url.includes('/api.') && navigator.onLine) {
+    return
+  }
 
   event.respondWith(
     caches.open("grillkorv").then((cache) => {

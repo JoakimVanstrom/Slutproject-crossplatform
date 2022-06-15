@@ -1,0 +1,33 @@
+.SlApp {
+  width: 100%;
+  li {
+    list-style-type: none;
+  }
+}
+
+.traffic {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 1rem;
+  height: 60rem;
+  font-size: 1.4rem;
+  .traffic-name {
+    font-size: 1.7rem;
+  }
+}
+
+.traffic-box {
+  margin: 1rem;
+  padding: 1rem;
+  width: 23rem;
+  background-color: #f6f6f6b8;
+  box-shadow: #575a5c80 0px 0px 5px;
+}
+
+@media screen and (max-width: 768px) {
+  .SlApp {
+    width: 20rem;
+    margin: 0 0 1rem 1rem;
+  }
+}

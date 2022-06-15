@@ -1,0 +1,12 @@
+.weatherApp {
+  padding: 1rem;
+  border-radius: 5px;
+  font-size: 3rem;
+}
+
+@media screen and (max-width: 768px) {
+  .weatherApp {
+    width: 20rem;
+    margin: 0 0 1rem 1rem;
+  }
+}
